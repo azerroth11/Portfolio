@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  max-height: -webkit-fill-available;
   width: 100vw;
   overflow: hidden;
   font-family: 'Atkinson Hyperlegible', sans-serif;
