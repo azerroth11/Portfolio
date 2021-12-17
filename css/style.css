@@ -134,7 +134,7 @@ br {
 
 .swiper-slide:not(:first-child) h1 {
   position: absolute;
-  top: 60%;
+  top: 61%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
