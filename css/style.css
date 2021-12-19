@@ -143,6 +143,17 @@ br {
   text-shadow: 0 0 5px rgba(255, 255, 255, 1);
 }
 
+.contact h1 {
+  top: 35% !important;
+}
+
+.contact h3 {
+  max-width: 50ch;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 @media screen and (min-width: 1000px) {
   .swiper-slide:not(:first-child) h1 {
     position: absolute;
