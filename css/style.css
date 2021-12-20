@@ -114,6 +114,7 @@ br {
   display: flex;
   flex-wrap: wrap;
   place-items: center;
+  gap: 8rem;
   padding-top: 10vh;
   max-width: 1150px;
   margin: 0 auto;
@@ -133,7 +134,7 @@ br {
 
 .swiper-slide:not(:first-child) p {
   position: absolute;
-  top: 61%;
+  top: 59.5%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -153,6 +154,7 @@ br {
   max-height: 50%;
   transform: translateY(50%);
   padding-top: 0;
+  gap: 0;
 }
 
 .contact h1,

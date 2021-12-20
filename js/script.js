@@ -37,7 +37,7 @@ const data = [
     date: 'Work in Progress',
   },
   {
-    id: 'La Cour de Barrate',
+    id: 'Barrate',
     imgMobile: './img/courBarrateMobile.webp',
     imgDesktop: './img/courBarrate.webp',
     url: 'https://azerroth11.github.io/Barrate/',
