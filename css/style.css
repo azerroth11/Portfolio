@@ -82,6 +82,7 @@ nav a {
 
 .speech p:nth-child(2) {
   font-size: max(1.5vw, 25px);
+  padding: 0 1.5rem;
 }
 
 br {
@@ -118,21 +119,19 @@ br {
   margin: 0 auto;
 }
 
-.swiper-slide .desktop {
-  margin: 0 auto;
-  max-width: 70%;
-  max-height: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-
 .swiper-slide .mobile {
   margin: 0 auto;
-  max-width: 40%;
+  max-width: 35%;
   max-height: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-.swiper-slide:not(:first-child) h1 {
+.swiper-slide .desktop {
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 50%;
+}
+
+.swiper-slide:not(:first-child) p {
   position: absolute;
   top: 61%;
   left: 50%;
@@ -141,6 +140,11 @@ br {
   text-align: center;
   font-size: max(3vw, 3rem);
   text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  font-weight: normal;
+}
+
+.swiper-slide:not(:first-child) p a {
+  display: none;
 }
 
 .contact {
@@ -161,8 +165,8 @@ br {
   transform: none !important;
 }
 
-.contact img {
-  width: 15%;
+.contact a {
+  width: max(10%, 75px);
 }
 
 .contact h3 {
@@ -171,12 +175,22 @@ br {
 }
 
 @media screen and (min-width: 1000px) {
-  .swiper-slide:not(:first-child) h1 {
+  .swiper-slide:not(:first-child) p {
     position: absolute;
     top: inherit;
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
     text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  }
+
+  .swiper-slide:not(:first-child) p a {
+    display: inline;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .swiper-slide:not(:first-child) p a:hover {
+    text-decoration: underline;
   }
 }
