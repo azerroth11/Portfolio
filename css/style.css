@@ -120,6 +120,10 @@ br {
   margin: 0 auto;
 }
 
+.swiper-slide-active {
+  padding-bottom: 1rem;
+}
+
 .swiper-slide .mobile {
   margin: 0 auto;
   max-width: 35%;
