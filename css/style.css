@@ -180,6 +180,62 @@ br {
   text-align: center;
 }
 
+/* About */
+.aboutMe {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.presentation {
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+  max-width: 70ch;
+  padding: 1.5rem;
+  z-index: 2;
+}
+
+.presentation p {
+  font-size: max(1.5vw, 22px);
+}
+
+.presentation a {
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: max(1.5vw, 22px);
+  font-weight: bold;
+  background-color: #fff;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.presentation a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.photo {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(500px, 70%);
+}
+
+.photo img {
+  width: 100%;
+}
+
+@media screen and (min-height: 700px) {
+  .photo {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .swiper-slide:not(:first-child) p {
     position: absolute;
@@ -198,5 +254,20 @@ br {
 
   .swiper-slide:not(:first-child) p a:hover {
     text-decoration: underline;
+  }
+
+  .photo {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    transform: none;
+  }
+
+  .presentation {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }

@@ -1,5 +1,3 @@
-const swiperWrapper = document.querySelector('.swiper-wrapper')
-
 const data = [
   {
     id: 'GEFormations',
@@ -45,18 +43,21 @@ const data = [
   },
 ]
 
+const swiperWrapper = document.querySelector('.swiper-wrapper')
 data.forEach((website) => {
   const swiperSlide = swiperWrapper.appendChild(document.createElement('div'))
   swiperSlide.classList.add('swiper-slide')
   const imgMobile = swiperSlide.appendChild(document.createElement('img'))
   imgMobile.src = website.imgMobile
   imgMobile.classList.add('mobile')
+  imgMobile.alt = `${website.id} mobile`
   const imgDesktop = swiperSlide.appendChild(document.createElement('img'))
   imgDesktop.src = website.imgDesktop
   imgDesktop.classList.add('desktop')
+  imgDesktop.alt = `${website.id} desktop`
   const websiteTitle = swiperSlide.appendChild(document.createElement('p'))
   if (website.url != '') {
-    websiteTitle.innerHTML = `${website.id} <span><a href='${website.url}' target="_blank"> - SEE LIVE </a></span></br> ${website.date}`
+    websiteTitle.innerHTML = `${website.id} - <span><a href='${website.url}' target="_blank">SEE LIVE </a></span></br> ${website.date}`
   } else {
     websiteTitle.innerHTML = `${website.id}</br> ${website.date}`
   }
