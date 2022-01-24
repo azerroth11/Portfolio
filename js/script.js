@@ -57,9 +57,9 @@ data.forEach((website) => {
   imgDesktop.alt = `${website.id} desktop`
   const websiteTitle = swiperSlide.appendChild(document.createElement('p'))
   if (website.url != '') {
-    websiteTitle.innerHTML = `${website.id} - <span><a href='${website.url}' target="_blank">SEE LIVE </a></span></br> ${website.date}`
+    websiteTitle.innerHTML = `${website.id} <br> <span>${website.date}</span> <a href='${website.url}' target="_blank">SEE LIVE </a>`
   } else {
-    websiteTitle.innerHTML = `${website.id}</br> ${website.date}`
+    websiteTitle.innerHTML = `${website.id} </br> <span>${website.date}</span>`
   }
 })
 const swiperSlide = swiperWrapper.appendChild(document.createElement('div'))

@@ -143,13 +143,18 @@ br {
   width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: max(3vw, 3rem);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  font-size: 2.5rem;
   font-weight: normal;
 }
 
-.swiper-slide:not(:first-child) p a {
+.swiper-slide:not(:first-child) p span {
   display: none;
+  font-size: 2.25rem;
+}
+
+.swiper-slide:not(:first-child) p a {
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 .contact {
@@ -243,17 +248,14 @@ br {
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  }
+
+  .swiper-slide:not(:first-child) p span {
+    display: block;
   }
 
   .swiper-slide:not(:first-child) p a {
-    display: inline;
-    font-weight: normal;
     font-style: italic;
-  }
-
-  .swiper-slide:not(:first-child) p a:hover {
-    text-decoration: underline;
   }
 
   .photo {
